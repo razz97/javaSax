@@ -14,6 +14,7 @@ public class CheckerHandler extends DefaultHandler {
 	private Arbol arbol = new Arbol();
 	private List<Arbol> arbolesLlenos = new ArrayList<>();
 	private int numArbres;
+	private int tabulacion = 0;
 
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
@@ -26,6 +27,7 @@ public class CheckerHandler extends DefaultHandler {
 			
 			arbol = new Arbol();
 		} 
+		tabulacion--;
 		
 	}
 
@@ -40,6 +42,7 @@ public class CheckerHandler extends DefaultHandler {
 		if (qName.equals("arbre")) {
 			numArbres++;
 		}
+		tabulacion++;
 	}
 
 	public List<String> getStructure() {
