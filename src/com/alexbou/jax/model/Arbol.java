@@ -2,208 +2,217 @@ package com.alexbou.jax.model;
 
 public class Arbol {
 
-	boolean lleno = false;
-	private String codi;
-	private String posX;
-	private String posY;
-	private String latitude;
-	private String longitude;
-	private String tipus;
-	private String espaiVerd;
-	private String adreca;
-	private String alcada;
-	private String catEspecie;
-	private String nomCientific;
-	private String nomEsp;
-	private String nomCat;
-	private String catArbrat;
-	private String amplBorera;
-	private String plantDT;
-	private String tipAigua;
-	private String tipSuperf;
-	private String tipSuport;
-	private String cobEscocell;
-	private String voraEscocell;
-	
-	public boolean isLleno() {
-		return lleno;
-	}
-	
-	public void setLleno(boolean lleno) {
-		this.lleno = lleno;
-	}
-	
-	public String getCodi() {
-		return codi;
-	}
+    private String codi;
+    private String posicioX_ETRS89;
+    private String posicioY_ETRS89;
+    private String latitud_WGS84;
+    private String longitud_WGS84;
+    private String tipusElement;
+    private String espaiVerd;
+    private String adreca;
+    private String alcada;
+    private String catEspecieId;
+    private String nomCientific;
+    private String nomEsp;
+    private String nomCat;
+    private String categoriaArbrat;
+    private String ampladaVorera;
+    private String plantacioDT;
+    private String tipAigua;
+    private String tipReg;
+    private String tipSuperf;
+    private String tipSuport;
+    private String cobertaEscocell;
+    private String midaEscocell;
+    private String voraEscocell;
 
-	public String getPosX() {
-		return posX;
-	}
+    public String getCodi() {
+	return codi;
+    }
 
-	public String getPosY() {
-		return posY;
-	}
+    public void setCodi(String codi) {
+	this.codi = codi;
+    }
 
-	public String getLatitude() {
-		return latitude;
-	}
+    public String getPosicioX_ETRS89() {
+	return posicioX_ETRS89;
+    }
 
-	public String getLongitude() {
-		return longitude;
-	}
+    public void setPosicioX_ETRS89(String posicioX) {
+	this.posicioX_ETRS89 = posicioX;
+    }
 
-	public String getTipus() {
-		return tipus;
-	}
+    public String getPosicioY_ETRS89() {
+	return posicioY_ETRS89;
+    }
 
-	public String getEspaiVerd() {
-		return espaiVerd;
-	}
+    public void setPosicioY_ETRS89(String posicioY) {
+	this.posicioY_ETRS89 = posicioY;
+    }
 
-	public String getAdreca() {
-		return adreca;
-	}
+    public String getLatitud_WGS84() {
+	return latitud_WGS84;
+    }
 
-	public String getAlcada() {
-		return alcada;
-	}
+    public void setLatitud_WGS84(String latitud_WGS84) {
+	this.latitud_WGS84 = latitud_WGS84;
+    }
 
-	public String getCatEspecie() {
-		return catEspecie;
-	}
+    public String getLongitud_WGS84() {
+	return longitud_WGS84;
+    }
 
-	public String getNomCientific() {
-		return nomCientific;
-	}
+    public void setLongitud_WGS84(String longitud_WGS84) {
+	this.longitud_WGS84 = longitud_WGS84;
+    }
 
-	public String getNomEsp() {
-		return nomEsp;
-	}
+    public String getTipusElement() {
+	return tipusElement;
+    }
 
-	public String getNomCat() {
-		return nomCat;
-	}
+    public void setTipusElement(String tipusElement) {
+	this.tipusElement = tipusElement;
+    }
 
-	public String getCatArbrat() {
-		return catArbrat;
-	}
+    public String getEspaiVerd() {
+	return espaiVerd;
+    }
 
-	public String getAmplBorera() {
-		return amplBorera;
-	}
+    public void setEspaiVerd(String espaiVerd) {
+	this.espaiVerd = espaiVerd;
+    }
 
-	public String getPlantDT() {
-		return plantDT;
-	}
+    public String getAdreca() {
+	return adreca;
+    }
 
-	public String getTipAigua() {
-		return tipAigua;
-	}
+    public void setAdreca(String adreca) {
+	this.adreca = adreca;
+    }
 
-	public String getTipSuperf() {
-		return tipSuperf;
-	}
+    public String getAlcada() {
+	return alcada;
+    }
 
-	public String getTipSuport() {
-		return tipSuport;
-	}
+    public void setAlcada(String alcada) {
+	this.alcada = alcada;
+    }
 
-	public String getCobEscocell() {
-		return cobEscocell;
-	}
+    public String getCatEspecieId() {
+	return catEspecieId;
+    }
 
-	public String getVoraEscocell() {
-		return voraEscocell;
-	}
+    public void setCatEspecieId(String catEspecieId) {
+	this.catEspecieId = catEspecieId;
+    }
 
-	public void setCodi(String codi) {
-		this.codi = codi;
-	}
+    public String getNomCientific() {
+	return nomCientific;
+    }
 
-	public void setPosX(String posX) {
-		this.posX = posX;
-	}
+    public void setNomCientific(String nomCientific) {
+	this.nomCientific = nomCientific;
+    }
 
-	public void setPosY(String posY) {
-		this.posY = posY;
-	}
+    public String getNomEsp() {
+	return nomEsp;
+    }
 
-	public void setLatitude(String latitude) {
-		this.latitude = latitude;
-	}
+    public void setNomEsp(String nomEsp) {
+	this.nomEsp = nomEsp;
+    }
 
-	public void setLongitude(String longitude) {
-		this.longitude = longitude;
-	}
+    public String getNomCat() {
+	return nomCat;
+    }
 
-	public void setTipus(String tipus) {
-		this.tipus = tipus;
-	}
+    public void setNomCat(String nomCat) {
+	this.nomCat = nomCat;
+    }
 
-	public void setEspaiVerd(String espaiVerd) {
-		this.espaiVerd = espaiVerd;
-	}
+    public String getCategoriaArbrat() {
+	return categoriaArbrat;
+    }
 
-	public void setAdreca(String adreca) {
-		this.adreca = adreca;
-	}
+    public void setCategoriaArbrat(String categoriaArbrat) {
+	this.categoriaArbrat = categoriaArbrat;
+    }
 
-	public void setAlcada(String alcada) {
-		this.alcada = alcada;
-	}
+    public String getAmpladaVorera() {
+	return ampladaVorera;
+    }
 
-	public void setCatEspecie(String catEspecie) {
-		this.catEspecie = catEspecie;
-	}
+    public void setAmpladaVorera(String ampladaVorera) {
+	this.ampladaVorera = ampladaVorera;
+    }
 
-	public void setNomCientific(String nomCientific) {
-		this.nomCientific = nomCientific;
-	}
+    public String getPlantacioDT() {
+	return plantacioDT;
+    }
 
-	public void setNomEsp(String nomEsp) {
-		this.nomEsp = nomEsp;
-	}
+    public void setPlantacioDT(String plantacioDT) {
+	this.plantacioDT = plantacioDT;
+    }
 
-	public void setNomCat(String nomCat) {
-		this.nomCat = nomCat;
-	}
+    public String getTipAigua() {
+	return tipAigua;
+    }
 
-	public void setCatArbrat(String catArbrat) {
-		this.catArbrat = catArbrat;
-	}
+    public void setTipAigua(String tipAigua) {
+	this.tipAigua = tipAigua;
+    }
 
-	public void setAmplBorera(String amplBorera) {
-		this.amplBorera = amplBorera;
-	}
+    public String getTipReg() {
+	return tipReg;
+    }
 
-	public void setPlantDT(String plantDT) {
-		this.plantDT = plantDT;
-	}
+    public void setTipReg(String tipReg) {
+	this.tipReg = tipReg;
+    }
 
-	public void setTipAigua(String tipAigua) {
-		this.tipAigua = tipAigua;
-	}
+    public String getTipSuperf() {
+	return tipSuperf;
+    }
 
-	public void setTipSuperf(String tipSuperf) {
-		this.tipSuperf = tipSuperf;
-	}
+    public void setTipSuperf(String tipSuperf) {
+	this.tipSuperf = tipSuperf;
+    }
 
-	public void setTipSuport(String tipSuport) {
-		this.tipSuport = tipSuport;
-	}
+    public String getTipSuport() {
+	return tipSuport;
+    }
 
-	public void setCobEscocell(String cobEscocell) {
-		this.cobEscocell = cobEscocell;
-	}
+    public void setTipSuport(String tipSuport) {
+	this.tipSuport = tipSuport;
+    }
 
-	public void setVoraEscocell(String voraEscocell) {
-		this.voraEscocell = voraEscocell;
-	}
-	
-	@Override
-	public String toString() {
-		return "Arbre " + this.codi;
-	}
+    public String getCobertaEscocell() {
+	return cobertaEscocell;
+    }
+
+    public void setCobertaEscocell(String cobEscocell) {
+	this.cobertaEscocell = cobEscocell;
+    }
+
+    public String getVoraEscocell() {
+	return voraEscocell;
+    }
+
+    public void setVoraEscocell(String voraEscocell) {
+	this.voraEscocell = voraEscocell;
+    }
+
+    public String getMidaEscocell() {
+	return midaEscocell;
+    }
+
+    public void setMidaEscocell(String midaEscocell) {
+	this.midaEscocell = midaEscocell;
+    }
+
+    @Override
+    public String toString() {
+	return "Arbre " + this.codi;
+    }
 
 }
